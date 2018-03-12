@@ -59,7 +59,7 @@
         }
 
         .text-title h1 {
-            margin-top: 40px;
+            margin-top: 20px !important;
             margin-left: 20px;
             font-size: 2em;
             margin-bottom: 10px; 
@@ -68,7 +68,17 @@
             //color: #f2f2f2;
             text-shadow: 3px 2px 2px #000000;
         }
-    }
+        .btn-resume-project{
+            background: #ffffff;
+            height: 55px;
+            width: 150px;
+            padding: 0;
+            //@include add-background($primary-color);
+            @include add-border(2px, #ffffff, all);
+            border-radius: 5px;
+        
+        }
+}
     
     
 
