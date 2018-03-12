@@ -72,7 +72,7 @@
             background: #ffffff;
             height: 50px !important;
             width: 150px !important;
-            padding: 0;
+            padding: 0 !important;
             //@include add-background($primary-color);
             @include add-border(2px, #ffffff, all);
             border-radius: 5px;
@@ -86,7 +86,9 @@
             font-family: Roboto;
             line-height: 5px;
             float: left;
-            margin-top: 25px;
+            margin-top: 15 !important;
+            margin-left: 0 !important;
+            text-align: left !important;
         }
 
 }
