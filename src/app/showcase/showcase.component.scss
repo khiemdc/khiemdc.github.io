@@ -70,14 +70,25 @@
         }
         .btn-resume-project{
             background: #ffffff;
-            height: 55px;
-            width: 150px;
+            height: 50px !important;
+            width: 150px !important;
             padding: 0;
             //@include add-background($primary-color);
             @include add-border(2px, #ffffff, all);
             border-radius: 5px;
-        
         }
+        
+        .btn-resume-project-text{
+            color:$dark-color;
+            text-transform: capitalize;
+            font-weight: normal !important;
+            font-size: 14px !important;
+            font-family: Roboto;
+            line-height: 5px;
+            float: left;
+            margin-top: 25px;
+        }
+
 }
     
     
