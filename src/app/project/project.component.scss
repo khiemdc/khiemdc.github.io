@@ -1,0 +1,93 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+
+
+.portfolio {
+    margin: 30px;
+    padding: 20px 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .portfolio {
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+}
+
+.img-portfolio {
+    margin: 0 auto;
+}
+
+.img-portfolio:hover {
+    opacity: 0.8;
+    transform: scale(1.025);
+    transition: all .25s ease;
+}
+
+#projectTitle {
+    font-size: 1.5em;
+    color: #F5C453;
+    text-align: left;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-weight: 400;
+}
+
+#subTitle {
+    font-size: 3em;
+    color: $primary-color;
+    text-align: center;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-weight: 400;
+    //margin-top: 5%;
+    margin-bottom: 8%;
+}
+/* Buttons */
+
+.btn-project{
+    background-color: #FFFFFF;
+    padding: 7px 10px;
+    border: 2px solid #F5C453;
+    border-radius: 25px;
+    width: 14.35em;
+    height: 3.05em;
+    color:#000000 !important; 
+}
+
+/*
+.btn-project:hover{
+	background:darken(#F5C453,10%) !important;
+	@include add-border(2px, #ffffff, all);
+} */
+
+.btn-primary{
+	@include add-background($primary-color);
+    @include add-border(2px, #ffffff, all);
+
+}
+
+.btn-primary:hover{
+	background:darken($primary-color,10%);
+	@include add-border(2px, #ffffff, all);
+}
+
+
+.cta-button {
+    border-radius: 5px;
+    //border: 1px solid #F5C453;
+    border: 1px solid #F5C453;
+    padding: 1em 1.5em;
+    display: inline-block;
+    font-size: 1.1em !important;
+    font-style: italic;
+    color: #000000;
+    margin: 0 1em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    min-width: 10em;
+    transition: all .25s ease; }
+
+.cta-button:hover {
+    transform: scale(1.025);
+    transition: all .25s ease; }
+  

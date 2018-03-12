@@ -1,0 +1,91 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+
+
+  .navbar {
+    background: url(#{$img-path}/bg-image.jpg) no-repeat top center;
+    background-size: cover;
+    border-radius: 0px;
+    padding: 0 30px !important;
+    /*@include add-border(1px, red, 'right-left');*/
+    width:100%;
+    //margin:auto;
+//    @include add-border(1px, #e7e7e7, 'right-left');
+  //  border-color:#4f4f57;
+    min-height: 45px;
+    line-height: 45px;
+    margin-bottom: -45px;
+    z-index: 1;
+  
+	
+	a{
+		color: $primary-color !important;
+		font-size:20px;
+    letter-spacing:-0.5px;
+    font-weight: 1.5em;
+		
+	}
+  
+  a:hover, a:focus{
+    background-color:$primary-color !important;
+    color:#fff !important;
+  }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #000009;
+        width:100%;
+        
+    }
+}
+  
+/*
+  .navbar .navbar-brand:hover,
+  .navbar .navbar-brand:focus {
+    color: #150201;
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    color: white;
+    border-radius: .25rem;
+    margin: 0 0.25em;
+  }
+  .navbar .navbar-nav .nav-link:not(.disabled):hover,
+  .navbar .navbar-nav .nav-link:not(.disabled):focus {
+    color: #150201;
+  }
+  
+  
+  .navbar .navbar-nav .nav-item.active .nav-link,
+  .navbar .navbar-nav .nav-item.active .nav-link:hover,
+  .navbar .navbar-nav .nav-item.active .nav-link:focus,
+  .navbar .navbar-nav .nav-item.show .nav-link,
+  .navbar .navbar-nav .nav-item.show .nav-link:hover,
+  .navbar .navbar-nav .nav-item.show .nav-link:focus {
+    color: #150201;
+    background-color: #1976d2;
+  }
+  .navbar .navbar-toggle {
+    border-color: #1976d2;
+  }
+  .navbar .navbar-toggle:hover,
+  .navbar .navbar-toggle:focus {
+    background-color: #1976d2;
+  }
+  .navbar .navbar-toggle .navbar-toggler-icon {
+    color: #ffffff;
+  }
+  .navbar .navbar-collapse,
+  .navbar .navbar-form {
+    border-color:white;
+  }
+  .navbar .navbar-link {
+    color: white;
+  }
+  .navbar .navbar-link:hover {
+    color: #150201;
+  }
+    */

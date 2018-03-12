@@ -1,0 +1,39 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+
+/* Footer */
+
+.footer-main{
+	@include add-background($dark-color);
+	@include add-border(5px, $secondary-color,top);
+	min-height:200px;
+	padding:30px 0;
+	z-index:100;
+	
+	a{
+		color:#ffffff;
+	}
+}
+    .list-unstyled {
+        padding: 0;
+        list-style: none;
+      }
+      .list-inline {
+        padding: 0;
+        margin: 0px;
+        list-style: none;
+                
+      li {
+        display: inline-block;
+        padding-right: 5px;
+        padding-left: 5px;
+       }
+      }
+      
+      #to-top {
+        //display: none;
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+      }
+

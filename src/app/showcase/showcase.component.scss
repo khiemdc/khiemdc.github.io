@@ -1,0 +1,137 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+
+.section-showcase{
+    height:$showcase-height;
+    background: url(#{$img-path}/bg-image.jpg) no-repeat top center;
+    background-size: cover;
+
+    .showcase-content{
+        padding: 80px 15px 30px 15px;
+        text-align: center;
+    }
+}
+    .text-title {
+        display: table-cell;
+        text-align: left;
+        vertical-align: middle;
+    }
+    
+    .text-title h1 {
+        margin-top: 0%;
+        margin-left: 60px;
+        font-size: 2.5em;
+        text-align: left;
+        margin-bottom: 0.5em; 
+        font-weight: 700;
+        //color: white;
+        //color: #f2f2f2;
+        text-shadow: 3px 2px 2px #000000;
+    }
+
+    .leed{
+        padding: 0px 0 30px 60px;
+        text-align: left;
+        color: $light-color;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .showcase-content{
+            padding: 60px 0 20px 0;
+            text-align: center;
+        }
+        .leed {
+            padding: 0;
+            text-align: center;
+            color: $light-color;
+        }
+
+        h1{
+            font-size: 22px;
+            text-align: center;
+            color:$primary-color;
+        }
+
+        .text-title {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center !important;
+        }
+
+        .text-title h1 {
+            margin-top: 40px;
+            margin-left: 20px;
+            font-size: 2em;
+            margin-bottom: 10px; 
+            font-weight: 400;
+            //color: white;
+            //color: #f2f2f2;
+            text-shadow: 3px 2px 2px #000000;
+        }
+    }
+    
+    
+
+
+/* Search box */
+.search{
+    width: 100%;
+
+    h3{
+        margin-top:0;
+        padding-top:0;
+    }
+
+    input[type=search]{
+        border:0;
+        height: 40px;
+        width: 70%;
+        border: 2px solid $primary-color;
+        font-size: 18px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+    }
+
+    button{
+        border: 0;
+        background: none;
+        padding:0;
+        vertical-align: top;
+        margin-left: -5px;
+    }
+}
+
+.btn-resume-project{
+    background: #ffffff;
+    height: 55px;
+    width: 200px;
+    padding: 0;
+    //@include add-background($primary-color);
+    @include add-border(2px, #ffffff, all);
+    border-radius: 5px;
+
+}
+
+.btn-resume-project:hover{
+    background:darken(#ffffff,10%) !important;
+    @include add-border(2px, $primary-color, all);
+}
+
+.fa-7{
+    padding: 0 !important;
+    margin: 5px 5px 0 25px !important;
+    font-size:40px;
+    color:$light-color;
+    float: left !important;
+}
+
+.btn-resume-project-text{
+    color:$dark-color;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Roboto;
+    line-height: 5px;
+    float: left;
+    margin-top: 25px;
+}

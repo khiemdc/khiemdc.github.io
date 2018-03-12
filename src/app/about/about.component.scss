@@ -1,0 +1,97 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+
+.resummeBody {
+    display: table;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: url(#{$img-path}/developers-screen.jpg) no-repeat center center fixed; 
+      opacity: 1;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-family: 'Fira Sans', sans-serif;
+  }
+
+  .resumeContainer {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #676767;
+    padding: 2em 6em;
+    display: inline-block;
+    font-size: 1em;
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+
+h6 {
+    font-weight: bold;
+    color: #F5C453;  
+    margin-top: 2em;
+  }  
+  
+  p-2 {
+      margin-left: 2em;
+  }
+  p-3 {
+      margin-left: 4em;
+  }
+
+  .cta-button {
+    border-radius: 5px;
+    //border: 1px solid #F5C453;
+    border: 1px solid #F5C453;
+    padding: 1em 1.5em;
+    display: inline-block;
+    font-size: 1.1em !important;
+    font-style: italic;
+    color: #000000;
+    margin: 0 1em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    min-width: 10em;
+    transition: all .25s ease; }
+
+.cta-button:hover {
+    transform: scale(1.025);
+    transition: all .25s ease; }
+
+
+/* Buttons */
+
+.btn-resume-project{
+    background: #ffffff;
+    height: 55px;
+    width: 200px;
+    padding: 0;
+    //@include add-background($primary-color);
+    @include add-border(2px, #ffffff, all);
+    border-radius: 5px;
+
+}
+
+.btn-resume-project:hover{
+	background:darken(#ffffff,2%) !important;
+	@include add-border(2px, #ffffff, all);
+}
+
+.fa-7{
+    padding: 0 !important;
+    margin: 5px 5px 0 25px !important;
+    font-size:40px;
+    color:$light-color;
+    float: left !important;
+}
+
+.btn-resume-project-text{
+    color:$dark-color;
+    text-transform: none;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Roboto;
+    line-height: 5px;
+    float: left;
+    margin-top: 25px;
+}

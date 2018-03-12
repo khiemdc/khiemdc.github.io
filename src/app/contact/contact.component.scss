@@ -1,0 +1,57 @@
+@import '~sass/variables';
+@import '~sass/mixins';
+
+
+/*Contact form CSS */
+
+.contactBody {
+    background: url(#{$img-path}/developers-screen.jpg) no-repeat center center fixed; 
+    opacity: 1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.contactContainer {
+    width: 100%;
+    background: #FFFFFF;
+    /*border: 1px solid #676767;*/
+    padding: 2em 2em;
+    display: inline-block;
+    text-align: left;
+    font-size: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    /*float: right;*/
+}
+
+/* Search box */
+.search{
+    width: 100%;
+
+    h3{
+        margin-top:0;
+        padding-top:0;
+    }
+
+    input[type=search]{
+        border:0;
+        height: 40px;
+        width: 70%;
+        border: 2px solid $primary-color;
+        font-size: 18px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+    }
+
+    button{
+        border: 0;
+        background: none;
+        padding:0;
+        vertical-align: top;
+        margin-left: -5px;
+    }
+}
+
