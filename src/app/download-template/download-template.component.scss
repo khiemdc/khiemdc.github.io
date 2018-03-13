@@ -4,3 +4,11 @@
 .section-border-top{
     @include add-border(4px, $secondary-color, top);
 }
+
+@media only screen and (max-width: 768px) {
+
+    img.device-small{
+        margin-bottom:15px;
+    }
+
+}
