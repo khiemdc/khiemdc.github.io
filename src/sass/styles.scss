@@ -37,6 +37,14 @@ h1{
     color:$primary-color;
 }
 
+.sub-title h1{
+    font-size: 3.2em !important;
+    text-align: center;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-weight: 640;
+    margin-top: 0 !important;
+    margin-bottom: 7% !important;
+}
 
 @media only screen and (max-width: 768px) {
     .showcase-content{
@@ -66,15 +74,30 @@ h1{
         text-align: center;
     }
 
+    .text-title{
+        vertical-align: middle;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        margin: 0px;
+    }
+    
+    .text-title h1 { 
+        font-size: 32px !important; 
+        font-weight: 420;
+        line-height: 40px !important;
+        letter-spacing: 0.3px !important; 
+        text-align: center;
+        text-shadow: 3px 2px 2px #000000;
+      }
 
-    #subTitle {
+    .sub-title h1{
         font-size: 2em !important;
-        color: $primary-color;
         text-align: center;
         /*font-family: 'Roboto', sans-serif;*/
-        font-weight: 400;
-        margin-top: 15% !important;
-        margin-bottom: 5% !important;
+        font-weight: 540;
+        letter-spacing: 0.3px !important; 
+        margin-top: 0 !important;
+        margin-bottom: 7% !important;
     }
 
     .img-sm{width:75px !important;}

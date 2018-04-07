@@ -11,7 +11,7 @@
         text-align: center;
     }
 }
-    .text-title {
+    /* .text-title {
         display: table-cell;
         text-align: left;
         vertical-align: middle;
@@ -27,9 +27,27 @@
         //color: white;
         //color: #f2f2f2;
         text-shadow: 3px 2px 2px #000000;
+    } */
+
+    .text-title{
+        vertical-align: middle;
+        padding-top: 0 !important;
+        padding-bottom: 1% !important;
+        margin-left: 60px;
     }
+    
+    .text-title h1 { 
+        font-size: 45px !important; 
+        font-weight: 620;
+        line-height: 55px !important;
+        letter-spacing: 2px !important; 
+        text-align: left;
+        text-shadow: 3px 2px 2px #000000;
+      }
 
     .leed{
+        letter-spacing: 1px !important; 
+        //font-weight: 100 !important;
         padding: 0px 0 30px 60px;
         text-align: left;
         color: $light-color;
@@ -52,7 +70,7 @@
             color:$primary-color;
         }
 
-        .text-title {
+        /* .text-title {
             display: table-cell;
             vertical-align: middle;
             text-align: center !important;
@@ -67,7 +85,25 @@
             //color: white;
             //color: #f2f2f2;
             text-shadow: 3px 2px 2px #000000;
+        } */
+
+        .text-title{
+            vertical-align: middle;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            margin: 0px;
         }
+        
+        .text-title h1 { 
+            font-size: 32px !important; 
+            font-weight: 420;
+            line-height: 40px !important;
+            letter-spacing: 0.3px !important; 
+            text-align: center;
+            text-shadow: 3px 2px 2px #000000;
+          }
+
+        
         .btn-resume-project{
             background: #ffffff;
             height: 50px !important;
@@ -80,7 +116,6 @@
         
         .btn-resume-project-text{
             color:$dark-color;
-            text-transform: capitalize;
             font-weight: normal !important;
             font-size: 14px !important;
             font-family: Roboto;
@@ -90,7 +125,14 @@
             margin-left: 0 !important;
             text-align: left !important;
         }
-
+        
+        .fa-7{
+            margin-top: 15px !important;
+            margin-left: 0 !important;
+            font-size:25px !important;
+            color:$light-color;
+            float: left !important;
+        }
 }
     
     
@@ -132,7 +174,7 @@
     //@include add-background($primary-color);
     @include add-border(2px, #ffffff, all);
     border-radius: 5px;
-
+    text-align: center !important;
 }
 
 .btn-resume-project:hover{
@@ -157,4 +199,5 @@
     line-height: 5px;
     float: left;
     margin-top: 25px;
+    text-align: center !important;
 }
